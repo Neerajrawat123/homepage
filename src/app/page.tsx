@@ -22,9 +22,7 @@ export default function Home() {
         <h2 className="text-2xl leading-9 font-bold mb-6 border-b-2 w-20 border-blue">
           Sports
         </h2>
-        {/* <button className={`${isDarkMode ? 'bg-white text-black' : 'bg-black text-white'} font-medium flex h-12 px-4 py-1 mb-6 rounded-md`} onClick={() => setIsDarkMode(!isDarkMode)}>
-          <img src={isDarkMode? '/brightness-and-contrast.png':'/night-mode.png'} className="w-12" alt="" />
-          </button> */}
+        
           <ToggleCheckbox isDarkMode={isDarkMode} setIsDarkMode ={setIsDarkMode}/>
         </div>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 mb-12 ">

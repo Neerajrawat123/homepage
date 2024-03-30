@@ -23,7 +23,7 @@ function TicketCard({data, isDarkMode}:{data:CardInfo, isDarkMode: boolean}) {
               }}
               width="257"
             />
-            <hr className={`mt-7 mx-2 border-dashed border-t-[1.8px] ${isDarkMode? 'text-card-bg' : 'text-black'} `} />
+            <hr className={`mt-8 mx-2 border-dashed border-t-[1.8px] ${isDarkMode? 'text-card-bg' : 'text-black'} `} />
             <div className="py-3 flex flex-col justify-center items-center">
               <span className="text-lg font-medium ">{data.name}</span>
               <div className="text-sm divide-x font-normal py-3">
@@ -38,8 +38,8 @@ function TicketCard({data, isDarkMode}:{data:CardInfo, isDarkMode: boolean}) {
               <button className=' text-white h-9 w-full  bg-black font-medium text-xs'>{data.buttonName}</button>
             </div>
           </div>
-        <div className={`w-3 h-6  absolute shadow-inner right-[-6px] top-[430px]   rounded-s-full bg-white-grad-col-2`}></div>
-            <div className={`w-3 h-6 rounded-e-full shadow-inner absolute left-0 bg-white-grad-col-1 top-[430px]`}></div>
+        <div className={`w-3 h-6  absolute shadow-inner right-[-6px] top-[430px]   rounded-s-full ${isDarkMode ? 'bg-dark-grad-col-1' : 'bg-white-grad-col-2'} `}></div>
+            <div className={`w-3 h-6 rounded-e-full shadow-inner absolute left-0 ${isDarkMode ? 'bg-dark-grad-col-1' : 'bg-white-grad-col-2'} top-[430px]`}></div>
           </div>
 
   )

@@ -21,7 +21,7 @@ type ToggleCheckboxProps = {
         <div
           id="star"
           className={`absolute bottom-3 right-16 w-8 h-8 bg-yellow-400 rounded-full transform ${isDarkMode ? 'scale-[40%] bottom-6 translate-x-11' : 'scale-100'} transition-all  duration-300 ease-in-out z-10`}
-        >s
+        >
           <div className="relative">
             <div className=" left-[3px] top-[-18px]  absolute text-yellow-400 text-6xl line-height-7 transform -translate-x-3 transition duration-300 ease-in-out">
               ★
